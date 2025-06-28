@@ -8,8 +8,7 @@
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/yourrepo.git
-cd yourrepo
+git clone git@github.com:KHawaldar/sportygroup.git
 ```
 2. ```cd sportygroup```
 
