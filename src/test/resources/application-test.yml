@@ -1,0 +1,4 @@
+ticketing:
+  lock:
+    wait-time-seconds:5
+    lease-time-seconds:10

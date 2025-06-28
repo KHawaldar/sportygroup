@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  sportygroup:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sportygroup:latest
+    environment:
+      - SPRING_PROFILES_ACTIVE
+      - SPRING_REDIS_HOST
+      - SPRING_REDIS_PORT
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    container_name: redis-container
+    ports:
+      - "6379:6379"
