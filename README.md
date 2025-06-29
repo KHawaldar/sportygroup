@@ -43,9 +43,13 @@ Open the following URL in your browser:
 ### How to find your machine IP address
 
 Run the following command in your terminal:
-
+#### Linux
 ```bash
-hostname -I
+hostname -I 
+```
+#### Mac
+```bash
+ipconfig getifaddr en0
 ```
 
 Use that IP in the URL, for example:
